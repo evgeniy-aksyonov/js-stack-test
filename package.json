@@ -8,7 +8,9 @@
   ],
   "scripts": {
     "start": "babel-node src",
-    "test": "eslint src && jest --coverage"
+    "test": "eslint src && jest --coverage",
+    "precommit": "yarn test",
+    "prepush": "yarn test"
   },
   "dependencies": {},
   "devDependencies": {
