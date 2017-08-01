@@ -8,7 +8,7 @@ import MessageAsync from '../../container/message-async'
 
 const title = 'Async Hello Page'
 
-const HelloAsyncPage = () =>
+const HelloAsyncPage = () => (
   <div>
     <Helmet
       title={title}
@@ -21,5 +21,6 @@ const HelloAsyncPage = () =>
     <MessageAsync />
     <HelloAsyncButton />
   </div>
+)
 
 export default HelloAsyncPage

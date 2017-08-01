@@ -8,7 +8,7 @@ import Message from '../../container/message'
 
 const title = 'Hello Page'
 
-const HelloPage = () =>
+const HelloPage = () => (
   <div>
     <Helmet
       title={title}
@@ -21,5 +21,6 @@ const HelloPage = () =>
     <Message />
     <HelloButton />
   </div>
+)
 
 export default HelloPage
