@@ -11,7 +11,8 @@
   "rules": {
     "semi": [2, "never"],
     "no-unexpected-multiline": 2,
-    "compat/compat": 2
+    "compat/compat": 2,
+    "linebreak-style": ["error", "unix"]
   },
   "settings": {
     "polyfills": ["fetch"]
