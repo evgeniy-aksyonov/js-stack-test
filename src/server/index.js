@@ -6,7 +6,7 @@ import express from 'express'
 import { APP_NAME, STATIC_PATH, WEB_PORT } from '../shared/config'
 import { isProd } from '../shared/util'
 import renderApp from './render-app'
-import { helloEndpointRoute } from './routes'
+import { helloEndpointRoute } from '../shared/routes'
 
 const app = express()
 

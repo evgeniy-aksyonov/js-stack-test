@@ -1,4 +1,4 @@
-import { helloEndpointRoute } from '../server/routes'
+import { helloEndpointRoute } from './routes'
 
 test('helloEndpointRoute', () => {
   expect(helloEndpointRoute()).toBe('/ajax/hello/:num')
