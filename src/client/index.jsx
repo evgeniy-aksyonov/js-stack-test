@@ -3,6 +3,7 @@
 import 'babel-polyfill'
 
 import Immutable from 'immutable'
+import $ from 'jquery'
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { AppContainer } from 'react-hot-loader'
@@ -10,12 +11,11 @@ import { Provider } from 'react-redux'
 import { BrowserRouter } from 'react-router-dom'
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux'
 import thunkMiddleware from 'redux-thunk'
-import $ from 'jquery'
 import Tether from 'tether'
 
 import App from '../shared/app'
-import helloReducer from '../shared/reducer/hello'
 import { APP_CONTAINER_SELECTOR } from '../shared/config'
+import helloReducer from '../shared/reducer/hello'
 import { isProd } from '../shared/util'
 import setUpSocket from './socket'
 
@@ -57,4 +57,3 @@ if (module.hot) {
 }
 
 setUpSocket(store)
-
