@@ -7,10 +7,11 @@ import injectSheet from 'react-jss'
 import ModalExample from '../modal-example'
 import { APP_NAME } from '../../config'
 
+
 const styles = {
   hoverMe: {
     '&:hover': {
-      color: 'red',
+      color: 'green',
       cursor: 'pointer',
     },
   },
